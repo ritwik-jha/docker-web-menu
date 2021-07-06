@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>DOCKER</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href={{ url_for('static', filename='bootstrap.min.css') }}>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body style="background-color:white">
+    
+    <div class="container">
+        <div class="page-header text-center bg-info text-white h-20">
+            <h1>DOCKER MENU</h1>
+        </div>
+    </div>
+    
+
+    <div class='h-25 container text-center mt-5'>
+    <h1 class='mx-5'>Welcome to docker automation menu</h1>
+    <h1 class='mx-5'>What do you want to do in Docker?</h1>
+    </div>
+
+    <div class='row'>
+    <div class='col-sm-4 mt-5'></div>
+    <div class='col-sm-4 mt-5'>
+        <div class='container px-5 py-5'>
+            <form method='GET' action='/docker-static-output' target='_blank'>
+        
+                <select class="form-select" name='option' aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option name='option' value="1">Check the docker version</option>
+                    <option name='option' value="2">Run a container</option>
+                    <option name='option' value="3">Pull image from dockerhub</option>
+                    <option name='option' value="4">List running docker containers</option>
+                    <option name='option' value="5">List all docker containers</option>
+                    <option name='option' value="6">List all images present in system</option>
+                    <option name='option' value="7">Start a docker container</option>
+                    <option name='option' value="8">Stop a docker container</option>
+                    <option name='option' value="9">Delete a docker container</option>
+                    <option name='option' value="10">Stop all docker containers</option>
+                    <option name='option' value="11">Delete all docker containers</option>
+                </select>
+        
+        
+
+                <button class='btn btn-dark mx-5 my-5' type='submit'>submit</button>
+        
+            </form>
+        </div>
+    </div>
+    <div class='col-sm-4 mt-5'></div>
+
+    </body>
+</html>
